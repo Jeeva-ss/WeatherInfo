@@ -1,15 +1,12 @@
-import React from 'react'
-
 export default function Wind() {
-
   return (
-    <div className="flex justify-start items-center gap-4 flex-wrap">
-      <div className="w-52 h-32 my-4 bg-white rounded-3xl p-4">
+    <div className="flex flex-wrap items-center justify-start gap-4">
+      <div className="h-32 p-4 my-4 bg-white w-52 rounded-3xl">
         {/* Title */}
-        <div className="flex justify-between items-center">
-          <p className="font-semibold text-sm">Wind</p>
+        <div className="flex items-center justify-between">
+          <p className="text-sm font-semibold">Wind</p>
           <div>
-            <span className="material-icons-outlined icon text-white rounded-lg text-lg p-1">
+            <span className="p-1 text-lg text-white rounded-lg material-icons-outlined icon">
               air
             </span>
           </div>
@@ -19,10 +16,9 @@ export default function Wind() {
             <div className="gauge__fill"></div>
             <div className="gauge__cover"></div>
           </div>
-          <p className='speedText'>8km/hr</p>
+          <p className="speedText">8km/hr</p>
         </div>
-
       </div>
     </div>
-  )
+  );
 }
