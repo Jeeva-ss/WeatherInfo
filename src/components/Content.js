@@ -41,7 +41,7 @@ export default function Content() {
             </span>
             <span className='text-xs'>05:17</span>
           </div>
-          <div className='flex items-center mt-1'>
+          <div className='flex items-center gap-1 mt-1'>
             <span className="text-xs material-icons-outlined">
               dark_mode
             </span>

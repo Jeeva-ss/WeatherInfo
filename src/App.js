@@ -8,17 +8,27 @@ import UVindex from './components/UVindex';
 import Wind from './components/Wind';
 import Content from './components/Content';
 
-// import undraw from '../src/Assets/new-york-page.png'
+import undraw from '../src/Assets/hero.jpg'
 
 function App() {
 
   return (
     <div className="flex items-center justify-center p-4 App">
-      <div style={{ background: "#5C9CE5" }} className='flex flex-wrap min-h-screen mx-auto w:11/12 md:w-10/12 xl:w-[1024px] xl:min-h-[50vh] md:flex-nowrap rounded-3xl'>
+
+      <div style={{ background: "#5C9CE5" }} className='relative flex flex-wrap min-h-screen mx-auto w:11/12 md:w-10/12 xl:w-[1024px] xl:min-h-[50vh] md:flex-nowrap rounded-3xl'>
+        <img src={undraw} alt="hero" width={70} className='absolute hidden md:block' style={{
+          width: "50%",
+          bottom: "7px",
+          height: "70%",
+          borderRadius: "24px",
+          borderTopLeftRadius: "0px",
+          borderBottomLeftRadius: "24px",
+          top: "30%",
+        }} />
         <div className='w-full p-4 md:w-64' style={{ background: "#5C9CE5", borderRadius: "inherit" }}>
           <Content />
         </div>
-        <div className='w-full p-4 rounded-3xl' style={{ background: '#E4F1FF' }}>
+        <div className='z-10 w-full p-4 rounded-3xl' style={{ background: '#E4F1FF' }}>
           <div style={{ width: "95%", margin: "15px auto" }} className='flex items-center justify-between'>
             <div>
               <p className='font-bold'>Welcome back Isabella!</p>
